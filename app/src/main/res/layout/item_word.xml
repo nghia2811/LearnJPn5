@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_word"
+    android:layout_width="152dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="name"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_isFavourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:src="@drawable/ic_baseline_favorite_border_24" />
+
+        <TextView
+            android:id="@+id/tv_romanji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="gram"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_viet"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_romanji"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="tieng viet"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_romanji"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/tv_viet"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_baseline_volume_up_24" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
